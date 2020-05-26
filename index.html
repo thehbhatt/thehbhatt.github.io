@@ -51,7 +51,7 @@
 		}
 
 		.demo .large-header {
-			background-image: url("https://images.unsplash.com/photo-1534796636912-3b95b3ab5986");
+			background-image: url("https://images.unsplash.com/photo-1467685790346-20bfe73a81f0");
 			background-color: black;
 		}
 
@@ -87,9 +87,16 @@
 			font-weight: 200;
 		}
 
+		.icon {
+			color:#a9a9a9;
+		}
+
 		@media only screen and (max-width: 768px) {
 			.demo .main-title {
 				font-size: 3em;
+			}
+			.grid-container {
+				padding: 0;
 			}
 		}
 	</style>
@@ -116,12 +123,10 @@
 </head>
 
 <body>
-
-		<div class="grid" role="main">
-			<div class="container demo">
+	<div class="container demo">
 				<div id="large-header" class="large-header">
 					<canvas id="demo-canvas"></canvas>
-					<div class="wrapper">
+					<div class="wrapper grid-container fivetoseven" role="main">
 						<div class="item" aria-label="Avatar">
 							<section id="avatar">
 								<img class="avatar" src="img/avatar.jpeg" alt="avatar.jpeg">
@@ -162,7 +167,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
