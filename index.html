@@ -56,6 +56,16 @@
 			background-color: black;
 		}
 
+		.demo .wrapper {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate3d(-50%, -50%, 0);
+			transform: translate3d(-50%, -50%, 0);
+		}
+
 		.main-title {
 			position: absolute;
 			margin: 0;
@@ -112,45 +122,46 @@
 		<div class="grid-container fivetoseven" role="main">
 			<div class="container demo">
 				<div id="large-header" class="large-header">
-					<canvas id="demo-canvas">
+					<canvas id="demo-canvas"></canvas>
+					<div class="wrapper">
 						<div class="item" aria-label="Avatar">
-				<section id="avatar">
-					<img class="avatar" src="img/avatar.jpeg" alt="avatar.jpeg">
-				</section>
-			</div>
+							<section id="avatar">
+								<img class="avatar" src="img/avatar.jpeg" alt="avatar.jpeg">
+							</section>
+						</div>
 						<div class="grid-container full autocenter">
-				<section id="bio" aria-label="Biography">
-					<h1 class="h3-like" aria-level="1" aria-label="Name">Hi, I am Hardik Bhatt</h1>
-					<p class="reset-margin" title="About" aria-label="About">Machine Who Turns ☕Coffee into 👨‍💻Code.<br />
-						🥗Vegetarian. 👨‍🍳Chef. 🚙Traveller.<br />
-						Based in 🇬🇧 UK.<br />
-						🕵️ Tech enthusiast &amp; 🔭🔬 Science Lover.<br />
-						Sometimes Funny.</p>
-				</section>
-				<section id="contact" aria-label="Contact">
-					<div class="icons" aria-label="Links">
-						<h2 class="h3-like" aria-label="Link Icons">
-							<a class="icon" href="mailto:hardik1590@gmail.com" target="_blank" rel="noopener me">
-								<i class="fas fa-envelope" title="email" aria-label="Send email."></i>
-							</a>
-							<a class="icon" href="https://www.facebook.com/thehbhatt" target="_blank" rel="noopener me">
-								<i class="fab fa-facebook" title="facebook" aria-label="Go to facebook."></i>
-							</a><a class="icon" href="https://github.com/thehbhatt" target="_blank" rel="noopener me">
-								<i class="fab fa-github" title="github" aria-label="Go to github."></i>
-							</a><a class="icon" href="https://instagram.com/thehbhatt" target="_blank" rel="noopener me">
-								<i class="fab fa-instagram" title="instagram" aria-label="Go to instagram."></i>
-							</a><a class="icon" href="https://twitter.com/thehbhatt" target="_blank" rel="noopener me">
-								<i class="fab fa-twitter" title="twitter" aria-label="Go to twitter."></i>
-							</a>
-						</h2>
+							<section id="bio" aria-label="Biography">
+								<h1 class="h3-like" aria-level="1" aria-label="Name">Hi, I am Hardik Bhatt</h1>
+								<p class="reset-margin" title="About" aria-label="About">Machine Who Turns ☕Coffee into 👨‍💻Code.<br />
+									🥗Vegetarian. 👨‍🍳Chef. 🚙Traveller.<br />
+									Based in 🇬🇧 UK.<br />
+									🕵️ Tech enthusiast &amp; 🔭🔬 Science Lover.<br />
+									Sometimes Funny.</p>
+							</section>
+							<section id="contact" aria-label="Contact">
+								<div class="icons" aria-label="Links">
+									<h2 class="h3-like" aria-label="Link Icons">
+										<a class="icon" href="mailto:hardik1590@gmail.com" target="_blank" rel="noopener me">
+											<i class="fas fa-envelope" title="email" aria-label="Send email."></i>
+										</a>
+										<a class="icon" href="https://www.facebook.com/thehbhatt" target="_blank" rel="noopener me">
+											<i class="fab fa-facebook" title="facebook" aria-label="Go to facebook."></i>
+										</a><a class="icon" href="https://github.com/thehbhatt" target="_blank" rel="noopener me">
+											<i class="fab fa-github" title="github" aria-label="Go to github."></i>
+										</a><a class="icon" href="https://instagram.com/thehbhatt" target="_blank" rel="noopener me">
+											<i class="fab fa-instagram" title="instagram" aria-label="Go to instagram."></i>
+										</a><a class="icon" href="https://twitter.com/thehbhatt" target="_blank" rel="noopener me">
+											<i class="fab fa-twitter" title="twitter" aria-label="Go to twitter."></i>
+										</a>
+									</h2>
+								</div>
+							</section>
+							<div class="quote-box">
+								<div id="quote"></div>
+								<p class="author"></p>
+							</div>
+						</div>
 					</div>
-				</section>
-				<div class="quote-box">
-					<div id="quote"></div>
-					<p class="author"></p>
-				</div>
-			</div>
-					</canvas>
 				</div>
 			</div>
 		</div>
